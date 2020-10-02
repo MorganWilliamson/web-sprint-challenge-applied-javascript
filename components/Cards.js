@@ -21,19 +21,53 @@
 //
 // Use your function to create a card for each of the articles, and append each card to the DOM.
 
+//javascript, bootstrap, technology, jquery, node.js
 
-// axios.get('https://lambda-times-api.herokuapp.com/articles')
-//     .then(res => {
-//         res.data.articles.javascript.forEach(obj => {
-//             cardMaker(item);
-//         })
-//         res.data.articles.bootstrap.forEach(obj => {
-//             cardMaker(item);
-//         }
-//     })
+axios.get('https://lambda-times-api.herokuapp.com/articles')
+    .then(res => {
+        res.data.articles.javascript.forEach(obj => {
+            cardMaker(item);
+        })
+        res.data.articles.bootstrap.forEach(obj => {
+            cardMaker(item);
+        })
+        res.data.articles.technology.forEach(obj => {
+            cardMaker(item);
+        })
+        res.data.articles.jquery.forEach(obj => {
+            cardMaker(item);
+        })
+        res.data.articles.node.forEach(obj => {
+            cardMaker(item);
+        })
+    })
+    .catch(error => {
+        console.log(`Error! ${error}`);
+        debugger
+    });
 
 
+function cardMaker(object) {
+    //Instantiating card elements (card(div), headline(div), author(div), imgContainer(div), img(img), span(span))
+    const card = document.createElement('div')
+    const headline = document.createElement('div')
+    const author = document.createElement('div')
+    const imgContainer = document.createElement('div')
+    const img = document.createElement('img')
+    const span = document.createElement('span')
 
-//function cardMaker(object) {
+    //Add classes to card elements (card, headline, author, imgContainer)
+    card.classList.add('card')
+    headline.classList.add('headline')
+    author.classList.add('author')
+    imgContainer.classList.add('img-container')
+    
+    //Add text content and attributes to card elements
 
-//}
+
+    //Append elements
+
+    //Append card to DOM
+
+    //return something
+}
