@@ -27,14 +27,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+The DOM is the Document Object Model, it's the structural backbone of all web pages. Every element on the page is represented in the DOM, and manipulating the DOM can be useful for created or modifying elements without having to hard code everything in the HTML.
 
 2. What is an event?
+An event is something happening inside of or on the page. Examples would include the page loading, or the user clicking, scrolling, hovering, typing, etc.
 
 3. What is an event listener?
+A specific method that waits for something to happen, and then reacts according to the code we give it. (Waiting for a click, and then making an element spin.)
 
 4. Why would we convert a NodeList into an Array?
+A NodeList cannot accept Array methods! If you convert a NodeList into an Array, you can then use things like .map, .forEach, and .reduce to modify the data you recieve. 
 
 5. What is a component?
+A component is a reusable chunk of code for creating an element on a page. Like the GitHub user cards we created yesterday, the component creates those cards by pulling data from the API we feed it.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -44,25 +49,27 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 #### Repository Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [*] Create a forked copy of this project
+- [*] Add your team lead as collaborator on Github
+- [*] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [*] Create a new branch: `git checkout -b <firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: `git push origin <firstName-lastName>`
 
 #### Launching the App
 
-- [ ] Navigate to the root of the project with your command line
-- [ ] Run `npm install` to download the dependencies listed in the `package.json` file
-- [ ] Run `npm start` to compile the project and serve it
-- [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command
+- [*] Navigate to the root of the project with your command line
+- [*] Run `npm install` to download the dependencies listed in the `package.json` file
+- [*] Run `npm start` to compile the project and serve it
+- [*] Navigate Chrome to the URL indicated in the output of the `npm start` command
 
 ### Task 2: Project Requirements
 
 Your finished project must include all of the following requirements:
 
-- [ ] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself.
+- [*] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the `index.html` file itself. 
+
+- Axios looks like it's already imported through a script tag.
 
 - [ ] Following the instructions in the `components/Header.js` file, create the Header.
 
