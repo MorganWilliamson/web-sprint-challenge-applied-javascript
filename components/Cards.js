@@ -76,6 +76,11 @@ function cardMaker(object) {
     const cardContainer = document.querySelector('.cards-container')
     cardContainer.append(card);
 
+    //Event listener for the cards to open and show content?
+    card.addEventListener('click', (event) => {
+        console.log(headline.textContent)
+    })
+
     //return something
     return cardContainer
 }
