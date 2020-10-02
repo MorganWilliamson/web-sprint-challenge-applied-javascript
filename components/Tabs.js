@@ -21,13 +21,12 @@ axios.get('https://lambda-times-api.herokuapp.com/topics')
             tab.classList.add('tab');
             
             //creating text content
-            topics.textContent = `${obj}`;
+            tab.textContent = `${obj}`;
             
             //applying text content to each tab
             topics.append(tab);
-            
-            return topics;
         })
+        
     })
     .catch(error => {
         console.log(`Uh oh: ${error}`);
